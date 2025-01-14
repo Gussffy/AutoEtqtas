@@ -18,7 +18,7 @@ public class QrExtractorImpl implements QrCodeExtractor {
                      String quantity = qrtext.substring(indexOf30 + 2, indexOf30 + 4).trim();
                      String productCode = qrtext.substring(qrtext.length() - 5);
 
-                     qrCodeData = new QrCodeData(expiryDate, productCode, quantity);
+                     qrCodeData = new QrCodeData (productCode, expiryDate, quantity);
                 }
             }
         } catch (Exception e) {
